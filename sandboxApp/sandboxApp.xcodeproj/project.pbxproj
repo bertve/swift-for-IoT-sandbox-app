@@ -9,12 +9,32 @@
 /* Begin PBXBuildFile section */
 		1596782F262B4EC50055B5C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1596782E262B4EC50055B5C8 /* AppDelegate.swift */; };
 		15967831262B4EC50055B5C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15967830262B4EC50055B5C8 /* SceneDelegate.swift */; };
-		15967833262B4EC50055B5C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15967832262B4EC50055B5C8 /* ViewController.swift */; };
 		15967836262B4EC50055B5C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15967834262B4EC50055B5C8 /* Main.storyboard */; };
 		15967838262B4EC60055B5C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15967837262B4EC60055B5C8 /* Assets.xcassets */; };
 		1596783B262B4EC60055B5C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15967839262B4EC60055B5C8 /* LaunchScreen.storyboard */; };
 		15967846262B4EC70055B5C8 /* sandboxAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15967845262B4EC70055B5C8 /* sandboxAppTests.swift */; };
 		15967851262B4EC70055B5C8 /* sandboxAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15967850262B4EC70055B5C8 /* sandboxAppUITests.swift */; };
+		15967866262B57370055B5C8 /* LightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15967865262B57370055B5C8 /* LightViewController.swift */; };
+		1596786B262B57600055B5C8 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1596786A262B57600055B5C8 /* DisplayViewController.swift */; };
+		15967870262B577B0055B5C8 /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1596786F262B577B0055B5C8 /* TemperatureViewController.swift */; };
+		15F76E76262C96BC00A0E9D3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76E75262C96BC00A0E9D3 /* Service.swift */; };
+		15F76E7D262C975F00A0E9D3 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76E7C262C975F00A0E9D3 /* ApiRequest.swift */; };
+		15F76E82262C97EA00A0E9D3 /* BasedResourceApiReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76E81262C97EA00A0E9D3 /* BasedResourceApiReq.swift */; };
+		15F76E87262C9A2100A0E9D3 /* ResourceApiReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76E86262C9A2100A0E9D3 /* ResourceApiReq.swift */; };
+		15F76E8C262C9B4900A0E9D3 /* RequestModelBasedResourceApiReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76E8B262C9B4900A0E9D3 /* RequestModelBasedResourceApiReq.swift */; };
+		15F76E91262C9BC900A0E9D3 /* PostRequestModelBasedResourceApiReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76E90262C9BC900A0E9D3 /* PostRequestModelBasedResourceApiReq.swift */; };
+		15F76E9B262C9EAA00A0E9D3 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76E9A262C9EAA00A0E9D3 /* Session.swift */; };
+		15F76EA0262C9F1D00A0E9D3 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76E9F262C9F1D00A0E9D3 /* ResponseError.swift */; };
+		15F76EA5262CA63D00A0E9D3 /* RPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76EA4262CA63D00A0E9D3 /* RPIService.swift */; };
+		15F76EAA262CAE4900A0E9D3 /* LightRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76EA9262CAE4900A0E9D3 /* LightRequest.swift */; };
+		15F76EAF262CAE6000A0E9D3 /* IncrementDisplayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76EAE262CAE6000A0E9D3 /* IncrementDisplayRequest.swift */; };
+		15F76EB4262CAE8400A0E9D3 /* DecrementDisplayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76EB3262CAE8400A0E9D3 /* DecrementDisplayRequest.swift */; };
+		15F76EB9262CAEB700A0E9D3 /* DisplayNumberRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76EB8262CAEB700A0E9D3 /* DisplayNumberRequest.swift */; };
+		15F76EBE262CAEE300A0E9D3 /* TemperatureRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76EBD262CAEE300A0E9D3 /* TemperatureRequest.swift */; };
+		15F76EC3262CB0C000A0E9D3 /* LightRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76EC2262CB0C000A0E9D3 /* LightRequestModel.swift */; };
+		15F76EC8262CB0D200A0E9D3 /* DisplayNumberRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76EC7262CB0D200A0E9D3 /* DisplayNumberRequestModel.swift */; };
+		15F76ECD262DD80000A0E9D3 /* MessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76ECC262DD80000A0E9D3 /* MessageResponse.swift */; };
+		15F76ED62630823900A0E9D3 /* KeyboardHandlingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F76ED52630823900A0E9D3 /* KeyboardHandlingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +58,6 @@
 		1596782B262B4EC50055B5C8 /* sandboxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sandboxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1596782E262B4EC50055B5C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15967830262B4EC50055B5C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		15967832262B4EC50055B5C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		15967835262B4EC50055B5C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15967837262B4EC60055B5C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1596783A262B4EC60055B5C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +68,27 @@
 		1596784C262B4EC70055B5C8 /* sandboxAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sandboxAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15967850262B4EC70055B5C8 /* sandboxAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sandboxAppUITests.swift; sourceTree = "<group>"; };
 		15967852262B4EC70055B5C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15967865262B57370055B5C8 /* LightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightViewController.swift; sourceTree = "<group>"; };
+		1596786A262B57600055B5C8 /* DisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
+		1596786F262B577B0055B5C8 /* TemperatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
+		15F76E75262C96BC00A0E9D3 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		15F76E7C262C975F00A0E9D3 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		15F76E81262C97EA00A0E9D3 /* BasedResourceApiReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasedResourceApiReq.swift; sourceTree = "<group>"; };
+		15F76E86262C9A2100A0E9D3 /* ResourceApiReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceApiReq.swift; sourceTree = "<group>"; };
+		15F76E8B262C9B4900A0E9D3 /* RequestModelBasedResourceApiReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModelBasedResourceApiReq.swift; sourceTree = "<group>"; };
+		15F76E90262C9BC900A0E9D3 /* PostRequestModelBasedResourceApiReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestModelBasedResourceApiReq.swift; sourceTree = "<group>"; };
+		15F76E9A262C9EAA00A0E9D3 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		15F76E9F262C9F1D00A0E9D3 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		15F76EA4262CA63D00A0E9D3 /* RPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPIService.swift; sourceTree = "<group>"; };
+		15F76EA9262CAE4900A0E9D3 /* LightRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightRequest.swift; sourceTree = "<group>"; };
+		15F76EAE262CAE6000A0E9D3 /* IncrementDisplayRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementDisplayRequest.swift; sourceTree = "<group>"; };
+		15F76EB3262CAE8400A0E9D3 /* DecrementDisplayRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecrementDisplayRequest.swift; sourceTree = "<group>"; };
+		15F76EB8262CAEB700A0E9D3 /* DisplayNumberRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNumberRequest.swift; sourceTree = "<group>"; };
+		15F76EBD262CAEE300A0E9D3 /* TemperatureRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureRequest.swift; sourceTree = "<group>"; };
+		15F76EC2262CB0C000A0E9D3 /* LightRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightRequestModel.swift; sourceTree = "<group>"; };
+		15F76EC7262CB0D200A0E9D3 /* DisplayNumberRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNumberRequestModel.swift; sourceTree = "<group>"; };
+		15F76ECC262DD80000A0E9D3 /* MessageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageResponse.swift; sourceTree = "<group>"; };
+		15F76ED52630823900A0E9D3 /* KeyboardHandlingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandlingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +139,12 @@
 		1596782D262B4EC50055B5C8 /* sandboxApp */ = {
 			isa = PBXGroup;
 			children = (
+				15F76E99262C9E1800A0E9D3 /* Helpers */,
+				15F76E71262C958300A0E9D3 /* Models */,
+				15F76E70262C957400A0E9D3 /* Services */,
+				15967864262B56F10055B5C8 /* ViewControllers */,
 				1596782E262B4EC50055B5C8 /* AppDelegate.swift */,
 				15967830262B4EC50055B5C8 /* SceneDelegate.swift */,
-				15967832262B4EC50055B5C8 /* ViewController.swift */,
 				15967834262B4EC50055B5C8 /* Main.storyboard */,
 				15967837262B4EC60055B5C8 /* Assets.xcassets */,
 				15967839262B4EC60055B5C8 /* LaunchScreen.storyboard */,
@@ -126,6 +169,103 @@
 				15967852262B4EC70055B5C8 /* Info.plist */,
 			);
 			path = sandboxAppUITests;
+			sourceTree = "<group>";
+		};
+		15967864262B56F10055B5C8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				15F76ED42630821400A0E9D3 /* baseViewControllers */,
+				15967865262B57370055B5C8 /* LightViewController.swift */,
+				1596786A262B57600055B5C8 /* DisplayViewController.swift */,
+				1596786F262B577B0055B5C8 /* TemperatureViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		15F76E70262C957400A0E9D3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				15F76E75262C96BC00A0E9D3 /* Service.swift */,
+				15F76EA4262CA63D00A0E9D3 /* RPIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		15F76E71262C958300A0E9D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				15F76E7A262C96F200A0E9D3 /* ServiceModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		15F76E7A262C96F200A0E9D3 /* ServiceModels */ = {
+			isa = PBXGroup;
+			children = (
+				15F76E97262C9D3300A0E9D3 /* Respone */,
+				15F76E96262C9D2900A0E9D3 /* Requests */,
+			);
+			path = ServiceModels;
+			sourceTree = "<group>";
+		};
+		15F76E7B262C970600A0E9D3 /* BaseRequests */ = {
+			isa = PBXGroup;
+			children = (
+				15F76E7C262C975F00A0E9D3 /* ApiRequest.swift */,
+				15F76E81262C97EA00A0E9D3 /* BasedResourceApiReq.swift */,
+				15F76E86262C9A2100A0E9D3 /* ResourceApiReq.swift */,
+				15F76E8B262C9B4900A0E9D3 /* RequestModelBasedResourceApiReq.swift */,
+				15F76E90262C9BC900A0E9D3 /* PostRequestModelBasedResourceApiReq.swift */,
+			);
+			path = BaseRequests;
+			sourceTree = "<group>";
+		};
+		15F76E95262C9CBD00A0E9D3 /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+				15F76EC2262CB0C000A0E9D3 /* LightRequestModel.swift */,
+				15F76EC7262CB0D200A0E9D3 /* DisplayNumberRequestModel.swift */,
+			);
+			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		15F76E96262C9D2900A0E9D3 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				15F76EA9262CAE4900A0E9D3 /* LightRequest.swift */,
+				15F76EAE262CAE6000A0E9D3 /* IncrementDisplayRequest.swift */,
+				15F76EB3262CAE8400A0E9D3 /* DecrementDisplayRequest.swift */,
+				15F76EB8262CAEB700A0E9D3 /* DisplayNumberRequest.swift */,
+				15F76EBD262CAEE300A0E9D3 /* TemperatureRequest.swift */,
+				15F76E7B262C970600A0E9D3 /* BaseRequests */,
+				15F76E95262C9CBD00A0E9D3 /* RequestModels */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		15F76E97262C9D3300A0E9D3 /* Respone */ = {
+			isa = PBXGroup;
+			children = (
+				15F76E9F262C9F1D00A0E9D3 /* ResponseError.swift */,
+				15F76ECC262DD80000A0E9D3 /* MessageResponse.swift */,
+			);
+			path = Respone;
+			sourceTree = "<group>";
+		};
+		15F76E99262C9E1800A0E9D3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				15F76E9A262C9EAA00A0E9D3 /* Session.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		15F76ED42630821400A0E9D3 /* baseViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				15F76ED52630823900A0E9D3 /* KeyboardHandlingViewController.swift */,
+			);
+			path = baseViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +398,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15967833262B4EC50055B5C8 /* ViewController.swift in Sources */,
 				1596782F262B4EC50055B5C8 /* AppDelegate.swift in Sources */,
+				15F76ED62630823900A0E9D3 /* KeyboardHandlingViewController.swift in Sources */,
+				15F76EB4262CAE8400A0E9D3 /* DecrementDisplayRequest.swift in Sources */,
+				15967866262B57370055B5C8 /* LightViewController.swift in Sources */,
 				15967831262B4EC50055B5C8 /* SceneDelegate.swift in Sources */,
+				1596786B262B57600055B5C8 /* DisplayViewController.swift in Sources */,
+				15F76EBE262CAEE300A0E9D3 /* TemperatureRequest.swift in Sources */,
+				15967870262B577B0055B5C8 /* TemperatureViewController.swift in Sources */,
+				15F76E82262C97EA00A0E9D3 /* BasedResourceApiReq.swift in Sources */,
+				15F76EC3262CB0C000A0E9D3 /* LightRequestModel.swift in Sources */,
+				15F76ECD262DD80000A0E9D3 /* MessageResponse.swift in Sources */,
+				15F76E87262C9A2100A0E9D3 /* ResourceApiReq.swift in Sources */,
+				15F76EA5262CA63D00A0E9D3 /* RPIService.swift in Sources */,
+				15F76EA0262C9F1D00A0E9D3 /* ResponseError.swift in Sources */,
+				15F76E91262C9BC900A0E9D3 /* PostRequestModelBasedResourceApiReq.swift in Sources */,
+				15F76E9B262C9EAA00A0E9D3 /* Session.swift in Sources */,
+				15F76E7D262C975F00A0E9D3 /* ApiRequest.swift in Sources */,
+				15F76EAF262CAE6000A0E9D3 /* IncrementDisplayRequest.swift in Sources */,
+				15F76E76262C96BC00A0E9D3 /* Service.swift in Sources */,
+				15F76EB9262CAEB700A0E9D3 /* DisplayNumberRequest.swift in Sources */,
+				15F76EC8262CB0D200A0E9D3 /* DisplayNumberRequestModel.swift in Sources */,
+				15F76EAA262CAE4900A0E9D3 /* LightRequest.swift in Sources */,
+				15F76E8C262C9B4900A0E9D3 /* RequestModelBasedResourceApiReq.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +596,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SAXE46TT9V;
 				INFOPLIST_FILE = sandboxApp/Info.plist;
@@ -445,6 +606,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bve.sandboxApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,6 +617,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SAXE46TT9V;
 				INFOPLIST_FILE = sandboxApp/Info.plist;
@@ -464,6 +627,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bve.sandboxApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
