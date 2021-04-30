@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--display-->
+        <!--Display-->
         <scene sceneID="A0G-Vi-seO">
             <objects>
                 <viewController id="7VY-oM-P2I" customClass="DisplayViewController" customModule="sandboxApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -52,7 +52,7 @@
                             <constraint firstItem="Xaz-4J-rJz" firstAttribute="trailing" secondItem="7qA-Dx-7af" secondAttribute="trailing" constant="32" id="w0Z-eO-FY5"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="display" image="display" catalog="system" id="06s-tF-JwF"/>
+                    <tabBarItem key="tabBarItem" title="Display" image="display" catalog="system" id="06s-tF-JwF"/>
                     <connections>
                         <outlet property="mainLbl" destination="7qA-Dx-7af" id="P5w-DD-kOD"/>
                         <outlet property="numberField" destination="pf4-3G-RqI" id="n1X-HG-ngz"/>
@@ -63,7 +63,7 @@
             </objects>
             <point key="canvasLocation" x="491" y="224"/>
         </scene>
-        <!--light-->
+        <!--Light-->
         <scene sceneID="5tD-DC-zy8">
             <objects>
                 <viewController id="s5O-Kv-AFC" customClass="LightViewController" customModule="sandboxApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -100,7 +100,7 @@
                             <constraint firstItem="XNg-6p-Ka4" firstAttribute="centerX" secondItem="6QL-Hc-bgJ" secondAttribute="centerX" id="yEf-Ad-SC1"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="light" image="lightbulb" catalog="system" selectedImage="lightbulb.fill" id="C8E-JC-AkS"/>
+                    <tabBarItem key="tabBarItem" title="Light" image="lightbulb" catalog="system" selectedImage="lightbulb.fill" id="C8E-JC-AkS"/>
                     <connections>
                         <outlet property="lightSwitch" destination="XNg-6p-Ka4" id="Kcn-OF-2n3"/>
                         <outlet property="stateLbl" destination="s7h-3R-Lky" id="ojm-52-PkK"/>
@@ -129,7 +129,7 @@
             </objects>
             <point key="canvasLocation" x="-567" y="-147"/>
         </scene>
-        <!--temperature-->
+        <!--Temperature-->
         <scene sceneID="xjA-8F-4Tt">
             <objects>
                 <viewController id="wwB-Yn-fog" customClass="TemperatureViewController" customModule="sandboxApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -137,34 +137,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REY-jw-REY">
-                                <rect key="frame" x="32" y="76" width="350" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DbU-cw-tg1" customClass="CPTGraphHostingView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="641"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8a3-Hz-stt">
+                                <rect key="frame" x="16" y="701" width="382" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhL-hr-hxL">
-                                <rect key="frame" x="364" y="39" width="18" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" image="arrow.clockwise" catalog="system"/>
-                                <connections>
-                                    <action selector="refreshBtnPressed:" destination="wwB-Yn-fog" eventType="touchUpInside" id="fAk-sf-bJ0"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="T1q-LE-pUN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="REY-jw-REY" firstAttribute="top" secondItem="T1q-LE-pUN" secondAttribute="top" constant="32" id="KuX-oP-b4X"/>
-                            <constraint firstItem="REY-jw-REY" firstAttribute="leading" secondItem="T1q-LE-pUN" secondAttribute="leading" constant="32" id="XfU-mN-ATy"/>
-                            <constraint firstItem="T1q-LE-pUN" firstAttribute="trailing" secondItem="JhL-hr-hxL" secondAttribute="trailing" constant="32" id="d4h-5w-0o7"/>
-                            <constraint firstItem="REY-jw-REY" firstAttribute="centerX" secondItem="pVp-h1-9sJ" secondAttribute="centerX" id="gPI-u6-37U"/>
-                            <constraint firstItem="REY-jw-REY" firstAttribute="top" secondItem="JhL-hr-hxL" secondAttribute="bottom" constant="8" id="iU0-b2-UsD"/>
+                            <constraint firstItem="8a3-Hz-stt" firstAttribute="leading" secondItem="T1q-LE-pUN" secondAttribute="leading" constant="16" id="6d4-PW-WoV"/>
+                            <constraint firstItem="DbU-cw-tg1" firstAttribute="leading" secondItem="T1q-LE-pUN" secondAttribute="leading" id="G1I-3H-LZ3"/>
+                            <constraint firstItem="T1q-LE-pUN" firstAttribute="bottom" secondItem="DbU-cw-tg1" secondAttribute="bottom" constant="128" id="GqV-9X-zcT"/>
+                            <constraint firstItem="T1q-LE-pUN" firstAttribute="trailing" secondItem="8a3-Hz-stt" secondAttribute="trailing" constant="16" id="Nnx-qr-i1Q"/>
+                            <constraint firstItem="DbU-cw-tg1" firstAttribute="centerX" secondItem="pVp-h1-9sJ" secondAttribute="centerX" id="UmN-ER-Y3O"/>
+                            <constraint firstItem="8a3-Hz-stt" firstAttribute="top" secondItem="DbU-cw-tg1" secondAttribute="bottom" constant="16" id="bJW-zo-J81"/>
+                            <constraint firstItem="DbU-cw-tg1" firstAttribute="top" secondItem="T1q-LE-pUN" secondAttribute="top" id="gFE-s2-bNd"/>
+                            <constraint firstItem="DbU-cw-tg1" firstAttribute="trailing" secondItem="T1q-LE-pUN" secondAttribute="trailing" id="qvc-17-dqS"/>
+                            <constraint firstItem="T1q-LE-pUN" firstAttribute="bottom" secondItem="8a3-Hz-stt" secondAttribute="bottom" constant="16" id="xon-rh-Chh"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="temperature" image="thermometer" catalog="system" id="99H-cE-BCA"/>
+                    <tabBarItem key="tabBarItem" title="Temperature" image="thermometer" catalog="system" id="99H-cE-BCA"/>
                     <connections>
-                        <outlet property="tempLbl" destination="REY-jw-REY" id="Axb-QM-iEX"/>
+                        <outlet property="hostView" destination="DbU-cw-tg1" id="hjp-7N-cYZ"/>
+                        <outlet property="mqttLbl" destination="8a3-Hz-stt" id="SB6-lD-zIA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOR-Up-OYW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -173,7 +174,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
         <image name="display" catalog="system" width="128" height="101"/>
         <image name="lightbulb" catalog="system" width="113" height="128"/>
         <image name="lightbulb.fill" catalog="system" width="113" height="128"/>

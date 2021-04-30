@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "mqtt-nio",
+        "repositoryURL": "https://github.com/sroebert/mqtt-nio.git",
+        "state": {
+          "branch": null,
+          "revision": "17794a4ac977b7a30fe6aac669c3a1b3ce55cc21",
+          "version": "1.0.1"
+        }
+      },
+      {
+        "package": "swift-log",
+        "repositoryURL": "https://github.com/apple/swift-log.git",
+        "state": {
+          "branch": null,
+          "revision": "5d66f7ba25daf4f94100e7022febf3c75e37a6c7",
+          "version": "1.4.2"
+        }
+      },
+      {
+        "package": "swift-nio",
+        "repositoryURL": "https://github.com/apple/swift-nio.git",
+        "state": {
+          "branch": null,
+          "revision": "21782f3bdc9581148d38d0ccaab6ec952ccda56b",
+          "version": "2.28.0"
+        }
+      },
+      {
+        "package": "swift-nio-ssl",
+        "repositoryURL": "https://github.com/apple/swift-nio-ssl.git",
+        "state": {
+          "branch": null,
+          "revision": "3d576964a1ace80d2a3f8bab96cab03e5ee074dc",
+          "version": "2.12.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

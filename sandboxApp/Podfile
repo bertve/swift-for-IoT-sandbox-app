@@ -1,0 +1,16 @@
+platform :ios, '14.3'
+
+target 'sandboxApp' do
+  use_frameworks!
+  
+  pod 'CorePlot', '~> 2.3'
+
+  target 'sandboxAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'sandboxAppUITests' do
+    # Pods for testing
+  end
+end
