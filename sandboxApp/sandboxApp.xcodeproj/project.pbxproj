@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0734B2247A402D9E869686A4 /* Pods_sandboxApp_sandboxAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374D94D2CEB0CA83E839ACD5 /* Pods_sandboxApp_sandboxAppUITests.framework */; };
 		0AB8E76FB533849A145D6DB5 /* Pods_sandboxApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221E137F3E8D777716CD669B /* Pods_sandboxApp.framework */; };
+		15727277264ABF710050B376 /* DoorRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15727276264ABF710050B376 /* DoorRequestModel.swift */; };
 		157608D72639F9C600626D2B /* MQTTNIO in Frameworks */ = {isa = PBXBuildFile; productRef = 157608D62639F9C600626D2B /* MQTTNIO */; };
 		157608DC263A143500626D2B /* TempData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157608DB263A143500626D2B /* TempData.swift */; };
 		1596782F262B4EC50055B5C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1596782E262B4EC50055B5C8 /* AppDelegate.swift */; };
@@ -63,6 +64,7 @@
 /* Begin PBXFileReference section */
 		055F7227E6480B48E7F130A2 /* Pods-sandboxApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sandboxApp.release.xcconfig"; path = "Target Support Files/Pods-sandboxApp/Pods-sandboxApp.release.xcconfig"; sourceTree = "<group>"; };
 		145F7AB65E2B5EE22DDB0E03 /* Pods-sandboxApp-sandboxAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sandboxApp-sandboxAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-sandboxApp-sandboxAppUITests/Pods-sandboxApp-sandboxAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		15727276264ABF710050B376 /* DoorRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorRequestModel.swift; sourceTree = "<group>"; };
 		157608DB263A143500626D2B /* TempData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempData.swift; sourceTree = "<group>"; };
 		1596782B262B4EC50055B5C8 /* sandboxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sandboxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1596782E262B4EC50055B5C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 		15F76E95262C9CBD00A0E9D3 /* RequestModels */ = {
 			isa = PBXGroup;
 			children = (
+				15727276264ABF710050B376 /* DoorRequestModel.swift */,
 				15F76EC2262CB0C000A0E9D3 /* LightRequestModel.swift */,
 				15F76EC7262CB0D200A0E9D3 /* DisplayNumberRequestModel.swift */,
 			);
@@ -581,6 +584,7 @@
 				15F76E7D262C975F00A0E9D3 /* ApiRequest.swift in Sources */,
 				15F76EAF262CAE6000A0E9D3 /* IncrementDisplayRequest.swift in Sources */,
 				15F76E76262C96BC00A0E9D3 /* Service.swift in Sources */,
+				15727277264ABF710050B376 /* DoorRequestModel.swift in Sources */,
 				15F76EB9262CAEB700A0E9D3 /* DisplayNumberRequest.swift in Sources */,
 				15F76EC8262CB0D200A0E9D3 /* DisplayNumberRequestModel.swift in Sources */,
 				15F76EAA262CAE4900A0E9D3 /* LightRequest.swift in Sources */,

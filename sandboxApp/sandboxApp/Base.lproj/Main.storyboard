@@ -141,36 +141,67 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="641"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8a3-Hz-stt">
-                                <rect key="frame" x="16" y="701" width="382" height="96"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Zoq-5M-Xfi">
+                                <rect key="frame" x="0.0" y="685" width="414" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No person at the door" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8a3-Hz-stt">
+                                        <rect key="frame" x="127.5" y="8" width="159" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="142" translatesAutoresizingMaskIntoConstraints="NO" id="BEd-8B-0IL">
+                                        <rect key="frame" x="84" y="43.5" width="246" height="76.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJZ-h3-8Eu">
+                                                <rect key="frame" x="0.0" y="0.0" width="52" height="76.5"/>
+                                                <state key="normal" title="Decline">
+                                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="declineBtnPushed:" destination="wwB-Yn-fog" eventType="touchUpInside" id="C98-hh-rtD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuA-4P-GIG">
+                                                <rect key="frame" x="194" y="0.0" width="52" height="76.5"/>
+                                                <state key="normal" title="Accept">
+                                                    <color key="titleColor" systemColor="systemGreenColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="acceptBtnPushed:" destination="wwB-Yn-fog" eventType="touchUpInside" id="3uk-EJ-ygt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="16" bottom="8" trailing="16"/>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="T1q-LE-pUN"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="8a3-Hz-stt" firstAttribute="leading" secondItem="T1q-LE-pUN" secondAttribute="leading" constant="16" id="6d4-PW-WoV"/>
+                            <constraint firstItem="T1q-LE-pUN" firstAttribute="trailing" secondItem="Zoq-5M-Xfi" secondAttribute="trailing" id="1j6-eb-v5t"/>
                             <constraint firstItem="DbU-cw-tg1" firstAttribute="leading" secondItem="T1q-LE-pUN" secondAttribute="leading" id="G1I-3H-LZ3"/>
                             <constraint firstItem="T1q-LE-pUN" firstAttribute="bottom" secondItem="DbU-cw-tg1" secondAttribute="bottom" constant="128" id="GqV-9X-zcT"/>
-                            <constraint firstItem="T1q-LE-pUN" firstAttribute="trailing" secondItem="8a3-Hz-stt" secondAttribute="trailing" constant="16" id="Nnx-qr-i1Q"/>
+                            <constraint firstItem="T1q-LE-pUN" firstAttribute="bottom" secondItem="Zoq-5M-Xfi" secondAttribute="bottom" id="QmC-fd-2Cv"/>
+                            <constraint firstItem="Zoq-5M-Xfi" firstAttribute="leading" secondItem="T1q-LE-pUN" secondAttribute="leading" id="QwV-UP-pix"/>
                             <constraint firstItem="DbU-cw-tg1" firstAttribute="centerX" secondItem="pVp-h1-9sJ" secondAttribute="centerX" id="UmN-ER-Y3O"/>
-                            <constraint firstItem="8a3-Hz-stt" firstAttribute="top" secondItem="DbU-cw-tg1" secondAttribute="bottom" constant="16" id="bJW-zo-J81"/>
+                            <constraint firstItem="Zoq-5M-Xfi" firstAttribute="top" secondItem="DbU-cw-tg1" secondAttribute="bottom" id="bHI-JM-hFK"/>
                             <constraint firstItem="DbU-cw-tg1" firstAttribute="top" secondItem="T1q-LE-pUN" secondAttribute="top" id="gFE-s2-bNd"/>
                             <constraint firstItem="DbU-cw-tg1" firstAttribute="trailing" secondItem="T1q-LE-pUN" secondAttribute="trailing" id="qvc-17-dqS"/>
-                            <constraint firstItem="T1q-LE-pUN" firstAttribute="bottom" secondItem="8a3-Hz-stt" secondAttribute="bottom" constant="16" id="xon-rh-Chh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Temperature" image="thermometer" catalog="system" id="99H-cE-BCA"/>
                     <connections>
+                        <outlet property="acceptBtn" destination="QuA-4P-GIG" id="nOB-oA-zvS"/>
+                        <outlet property="declineBtn" destination="lJZ-h3-8Eu" id="jo0-Ze-gLY"/>
                         <outlet property="hostView" destination="DbU-cw-tg1" id="hjp-7N-cYZ"/>
                         <outlet property="mqttLbl" destination="8a3-Hz-stt" id="SB6-lD-zIA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOR-Up-OYW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-568" y="595"/>
+            <point key="canvasLocation" x="-568.1159420289855" y="594.64285714285711"/>
         </scene>
     </scenes>
     <resources>
@@ -180,6 +211,12 @@
         <image name="thermometer" catalog="system" width="93" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

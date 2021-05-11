@@ -8,18 +8,20 @@
 import Foundation
 import NIO
 import MQTTNIO
+import NIOSSL
 
 class MQTTService {
 
     var client: MQTTClient
-    let remote_host = "https://github.com/sroebert/mqtt-nio.git"
+    var jsonEncoder = JSONEncoder()
 
-    init(host: String = "192.168.0.125", port: Int = 1883) {
+    init(host: String = "ac24c670632142bab0a422606038f608.s1.eu.hivemq.cloud", port: Int = 8883) {
         let group = MultiThreadedEventLoopGroup(numberOfThreads: 2)
+        var config = MQTTConfiguration(target: .host( host, port: port))
+        config.credentials = MQTTConfiguration.Credentials(username: "bertve",password: "Swift4iot")
+        config.tls = TLSConfiguration.clientDefault
         self.client = MQTTClient(
-            configuration: .init(
-                target: .host( host, port: port)
-            ),
+            configuration: config,
             eventLoopGroup: group
         )
         client.connect()
@@ -46,6 +48,14 @@ class MQTTService {
             case .failure:
                 print("Server did not respond")
             }
+        }
+    }
+    
+    func publish<T: Codable>(to topic: String, with payload: T) {
+        
+        if let jsonPayload = try? jsonEncoder.encode(payload),
+            let jsonString = jsonPayload.prettyPrintedJSONString {
+            client.publish(topic: topic, payload: jsonString as String)
         }
     }
 

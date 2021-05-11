@@ -19,4 +19,8 @@ struct TempData: Codable {
         case objectTemp
     }
     
+    func isFeverDetected() -> Bool {
+        return objectTemp >= 37.7 ? true : false
+    }
+    
 }
