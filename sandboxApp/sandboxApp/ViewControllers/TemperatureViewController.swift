@@ -19,8 +19,7 @@ class TemperatureViewController: UIViewController{
     var xMin = Int(Date().timeIntervalSince1970)
     var xMax = Int(Date().addingTimeInterval(20).timeIntervalSince1970)
     var yMin = 20
-    var yMax = 45
-    
+    var yMax = 42
     
     @IBOutlet var hostView: CPTGraphHostingView!
     @IBOutlet var mqttLbl: UILabel!
@@ -38,7 +37,9 @@ class TemperatureViewController: UIViewController{
     
     private func setupMQTT() {
         mqttService.subscribe(to: "temperature")
+        
         mqttService.client.addMessageListener { _, message, _ in
+            print(message)
             if  let payload = message.payload,
                 let json = payload.getString(at: payload.readerIndex, length: payload.readableBytes) {
                     if let data = json.data(using: .utf8),
@@ -50,6 +51,17 @@ class TemperatureViewController: UIViewController{
                     }
             }
         }
+        
+        mqttService.client.addConnectListener { _, response, _ in
+            print("Connected: \(response.returnCode)")
+            self.mqttService.subscribe(to: "temperature")
+        }
+        
+        mqttService.client.addDisconnectListener { _, reason, _ in
+            print("Disconnected: \(reason)")
+            self.mqttService.unsubscribe(from: "temperature")
+        }
+        
     }
     
     private func updateUI(with tempData: TempData){
@@ -61,7 +73,7 @@ class TemperatureViewController: UIViewController{
             }
                 
         } else {
-            // no data yet so enable evalutation
+            // no data yet so enable evaluation
             enableEvaluation()
         }
                 
@@ -214,6 +226,7 @@ class TemperatureViewController: UIViewController{
     }
     
     private func enableEvaluation() {
+        print("enable eval")
         // new measurement new starting point graph
         self.tempDataCollection.removeAll()
         let graph = hostView.hostedGraph!
